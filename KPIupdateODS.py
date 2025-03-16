@@ -21,7 +21,7 @@ for file in os.listdir(folder_path_ods):
         # Que recorra todas las hojas y las agregaue a la lista
         for sheet_name, df in sheets.items():
             df["Archivo"] = file # Agregue una columna con el numbre del archivo
-            df["Hoja"] = sheet_name = # Agregue una columna con el nombre de la hoja
+            df["Hoja"] = sheet_name # Agregue una columna con el nombre de la hoja
             dataFrames.append(df)
 
 
